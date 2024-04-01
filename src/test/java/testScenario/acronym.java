@@ -187,6 +187,35 @@ public class acronym extends DriverSetup{
 		test.pass("acronym data is displayed");	
 	}
 	
+	@Test(priority=12)
+	public void scrollToBottom() {
+		test = extent.createTest("scroll to bottom");
+		test.log(Status.INFO, "Starting the test case");
+		element.scrollBottom();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		test.pass("scrolled to bottom of the page");	
+	}
+	
+	@Test(priority=13)
+	public void getStockPriceUSD() {
+		test = extent.createTest("get stock value");
+		test.log(Status.INFO, "Starting the test case");
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("stock price : " + element.getStockValue() +" "+ element.getStockUSD());
+		
+		test.pass("stock value is disaplayed");
+	}
+	
 	
 	@AfterClass
 	public void closeBrow() {

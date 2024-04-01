@@ -7,13 +7,10 @@
 			<class name="testScenario.acronym" />
 		</classes>
 	</test> 
-	
-	<!--	
 	<test thread-count="2" name="Test search in Edge">
 		<parameter name="browser" value="edge" />
 		<classes>
 			<class name="testScenario.acronym" />
 		</classes>
 	</test>
-	-->
 </suite> 

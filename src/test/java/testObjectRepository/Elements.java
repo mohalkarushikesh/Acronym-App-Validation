@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.hc.core5.util.Asserts;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,8 +36,12 @@ public class Elements {
 	public static List<WebElement> colCount;
 	@FindBy(xpath="(//span[@data-automationid='splitbuttonprimary']//span//span)[1]")
 	public static WebElement becogni;
-	
-	
+	@FindBy(xpath="(//*[@data-automation-id='CanvasSection'])[4]")
+	public static WebElement nasdaqscroll;
+	@FindBy(xpath="//div[@class='stockValue_60e60a8c']")
+	public static WebElement stockValue;
+	@FindBy(xpath="//div[@class='stockCurrency_60e60a8c']")
+	public static WebElement stockValueUSD;
 	
 	//instantiate the webElements
 	public Elements(WebDriver driver) {
@@ -108,6 +113,18 @@ public class Elements {
 //		}
 		Assert.assertEquals(actualUrl, driver.getCurrentUrl());
 		System.out.println("URL matching --> Part executed");
+	}
+	
+	public void scrollBottom() {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].scrollIntoView();",nasdaqscroll);
+	}
+	
+	public String getStockValue() {
+		return stockValue.getText();
+	}
+	public String getStockUSD() {
+		return stockValueUSD.getText();
 	}
 	
 }

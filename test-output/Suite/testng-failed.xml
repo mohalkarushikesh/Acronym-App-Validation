@@ -6,8 +6,7 @@
     <classes>
       <class name="testScenario.acronym">
         <methods>
-          <include name="ClickOnBeCogni"/>
-          <include name="ValidateCogniHomePage"/>
+          <include name="getStockPriceUSD"/>
           <include name="closeBrow"/>
           <include name="driverconfig"/>
         </methods>

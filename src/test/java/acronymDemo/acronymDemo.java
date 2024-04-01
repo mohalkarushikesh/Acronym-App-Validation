@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -96,6 +97,16 @@ public class acronymDemo {
 		}else {
 			System.out.println("No,  it is not redirected to Be. Cognizant Home Page.");
 		}
+		
+		//scroll page 
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		WebElement nasdaq = driver.findElement(By.xpath("(//*[@data-automation-id='CanvasSection'])[4]"));
+		js.executeScript("arguments[0].scrollIntoView();",nasdaq);
+		Thread.sleep(5000);
+		
+		WebElement stockValue=driver.findElement(By.xpath("//div[@class='stockValue_60e60a8c']"));
+		WebElement stockValueUSD=driver.findElement(By.xpath("//div[@class='stockCurrency_60e60a8c']"));
+		System.out.println("stock price : " + stockValue.getText()+" "+stockValueUSD.getText());
 		
 		
 		// get the cognizant stock price 
