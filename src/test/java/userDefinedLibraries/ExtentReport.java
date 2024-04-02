@@ -25,7 +25,7 @@ public class ExtentReport extends DriverSetup implements ITestListener  {
 		sparkReporter.config().setTheme(Theme.DARK);
 		extent=new ExtentReports();
 		extent.attachReporter(sparkReporter);
-		extent.setSystemInfo("Tester Name","Manamohan");
+		extent.setSystemInfo("Tester Name","Rushikesh Mohalkar");
 	}
 
 	public void onTestSuccess(ITestResult result) {

@@ -4,15 +4,14 @@
 	<listeners>
 		<listener class-name="userDefinedLibraries.ExtentReport"></listener>
 	</listeners>
-
-	<test thread-count="2" name="Test search in Chrome">
-		<parameter name="browser" value="chrome" />
+	<test thread-count="2" name="Test search in Edge">
+		<parameter name="browser" value="edge" />
 		<classes>
 			<class name="testScenario.TestCases" />
 		</classes>
 	</test>
-	<test thread-count="2" name="Test search in Edge">
-		<parameter name="browser" value="edge" />
+	<test thread-count="2" name="Test search in Chrome">
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="testScenario.TestCases" />
 		</classes>

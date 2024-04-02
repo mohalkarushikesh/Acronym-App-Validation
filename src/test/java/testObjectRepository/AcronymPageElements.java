@@ -17,9 +17,9 @@ public class AcronymPageElements {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//div[@id='title_text']")
+	@FindBy(id = "title_text")
 	public static WebElement checkAcronym;
-	@FindBy(xpath = "//div[@id='title_text']")
+	@FindBy(id = "title_text")
 	public static WebElement elementDisplayed;
 	@FindBy(xpath = "//tbody//tr")
 	public static List<WebElement> rowCount;
@@ -28,20 +28,20 @@ public class AcronymPageElements {
 	@FindBy(xpath = "(//span[@data-automationid='splitbuttonprimary']//span//span)[1]")
 	public static WebElement becogni;
 	
-
+	// check for acronym Tool-tip
 	public String checkAcronymToolTip() {
 		return checkAcronym.getAttribute("title");
 	}
-
+	// check isElement is displayed 
 	boolean isElementDisplayed() {
 		return elementDisplayed.isDisplayed();
 	}
-
+	// display run-count
 	public int displayrowCount() {
 		int r = rowCount.size();
 		return r;
 	}
-
+	// printing acronym data
 	public void acronymDataPrint() {
 		for (int r = 1; r <= rowCount.size(); r++) {
 			for (int c = 1; c <= colCount.size(); c++) {
@@ -51,7 +51,7 @@ public class AcronymPageElements {
 			System.out.println();
 		}
 	}
-
+	// click on beCognizant URL
 	public void clickOnBeCogni() {
 		becogni.click();
 	}

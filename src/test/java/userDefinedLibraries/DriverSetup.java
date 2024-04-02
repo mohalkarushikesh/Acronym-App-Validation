@@ -14,7 +14,6 @@ public class DriverSetup {
 
 	public static WebDriver driverInstantiate(String browser) {
 		browserType = browser;
-
 		if (browserType.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("edge")) {

@@ -21,12 +21,14 @@ public class BeCognizantPageElements {
 		PageFactory.initElements(driver, this);
 	}
 
-	// xpaths
-	@FindBy(xpath = "//div[@class='_8ZYZKvxC8bvw1xgQGSkvvA==']")
+	// X-Paths
+	//@FindBy(xpath = "//div[@class='_8ZYZKvxC8bvw1xgQGSkvvA==']")
+	//public static WebElement accInfo;
+	@FindBy(id = "O365_MainLink_MePhoto")
 	public static WebElement accInfo;
-	@FindBy(xpath = "//div[@id='mectrl_currentAccount_primary']")
+	@FindBy(id = "mectrl_currentAccount_primary")
 	public static WebElement name;
-	@FindBy(xpath = "//div[@id='mectrl_currentAccount_secondary']")
+	@FindBy(id = "mectrl_currentAccount_secondary")
 	public static WebElement emailId;
 	@FindBy(xpath = "(//i[@data-icon-name='CaretRight'])[1]")
 	public static WebElement company;
@@ -54,11 +56,11 @@ public class BeCognizantPageElements {
 	public String getEmailId() {
 		return emailId.getText();
 	}
-
+	// click on company drop-down
 	public void clickOnCompany() {
 		company.click();
 	}
-
+	// select acronym from drop down
 	public void clickOnAcronym() {
 		String acronym = "Acronyms";
 		for (WebElement c : companyDrop) {
@@ -101,7 +103,6 @@ public class BeCognizantPageElements {
 		try {
 			rows = ExcelUtils.getRowCount(file, "Sheet1");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		int flag = 0;
@@ -111,7 +112,6 @@ public class BeCognizantPageElements {
 			try {
 				stockdata = ExcelUtils.getCellData(file, "Sheet1", i, 1);
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			if (Double.parseDouble(stockdata) == Double.parseDouble(stock)) {
@@ -119,13 +119,11 @@ public class BeCognizantPageElements {
 				try {
 					date = ExcelUtils.getCellData(file, "Sheet1", i, 0);
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 				System.out.println(date);
 				flag++;
 			}
-
 		}
 		if (flag == 0) {
 			System.out.println("No data found!");

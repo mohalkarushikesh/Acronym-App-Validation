@@ -16,9 +16,7 @@ import testObjectRepository.BeCognizantPageElements;
 import userDefinedLibraries.DriverSetup;
 import userDefinedLibraries.ExtentReport;
 
-
 public class TestCases extends DriverSetup {
-//	public static WebDriver driver;
 	BeCognizantPageElements beCogniElement;
 	AcronymPageElements acronymElement;
 	private ExtentReports extent;
@@ -122,7 +120,7 @@ public class TestCases extends DriverSetup {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println(acronymElement.checkAcronymToolTip());
+		System.out.println("Tooltip: " + acronymElement.checkAcronymToolTip());
 		test.pass("Tool Tip captured");
 	}
 
@@ -211,7 +209,7 @@ public class TestCases extends DriverSetup {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("stock price : " + beCogniElement.getStockValue() + " " + beCogniElement.getStockUSD());
+		System.out.println("Current stock price : " + beCogniElement.getStockValue() + " " + beCogniElement.getStockUSD());
 
 		test.pass("stock value is disaplayed");
 	}
