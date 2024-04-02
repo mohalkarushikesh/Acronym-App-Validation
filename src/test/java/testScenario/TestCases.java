@@ -57,12 +57,11 @@ public class TestCases extends DriverSetup {
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
 		String name = beCogniElement.getName();
-		System.out.println(name);
+		System.out.println("User Name : " + name);
 		test.pass("Name is taken");
 	}
 
@@ -73,11 +72,10 @@ public class TestCases extends DriverSetup {
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		String emailId = beCogniElement.getEmailId();
-		System.out.println(emailId);
+		System.out.println("Email Id : " + emailId);
 		test.pass("Email Id is taken");
 	}
 
@@ -88,7 +86,6 @@ public class TestCases extends DriverSetup {
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		beCogniElement.clickOnCompany();
@@ -102,7 +99,6 @@ public class TestCases extends DriverSetup {
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		beCogniElement.clickOnAcronym();
@@ -117,7 +113,6 @@ public class TestCases extends DriverSetup {
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		System.out.println("Tooltip: " + acronymElement.checkAcronymToolTip());
@@ -155,7 +150,6 @@ public class TestCases extends DriverSetup {
 		try {
 			Thread.sleep(8000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		test.pass("acronym data is displayed");
@@ -206,7 +200,6 @@ public class TestCases extends DriverSetup {
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		System.out.println("Current stock price : " + beCogniElement.getStockValue() + " " + beCogniElement.getStockUSD());
@@ -224,11 +217,9 @@ public class TestCases extends DriverSetup {
 
 	@AfterClass
 	public void closeBrow() {
-		// Close the browser after all the steps of scenario
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		driverTearDown();

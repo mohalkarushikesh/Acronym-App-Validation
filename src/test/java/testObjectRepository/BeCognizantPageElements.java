@@ -22,7 +22,7 @@ public class BeCognizantPageElements {
 	}
 
 	// X-Paths
-	//@FindBy(xpath = "//div[@class='_8ZYZKvxC8bvw1xgQGSkvvA==']")
+	//@FindBy(x path = "// div[@class='_8ZYZKvxC8bvw1xgQGSkvvA==']")
 	//public static WebElement accInfo;
 	@FindBy(id = "O365_MainLink_MePhoto")
 	public static WebElement accInfo;
@@ -42,7 +42,7 @@ public class BeCognizantPageElements {
 	public static WebElement stockValueUSD;
 
 	// methods
-	// Click on acc info
+	// Click on Account info
 	public void clickOnAccInfo() {
 		accInfo.click();
 	}
@@ -70,8 +70,6 @@ public class BeCognizantPageElements {
 			}
 		}
 	}
-
-	
 
 	public void ValidateCogniHomePage() {
 		String actualUrl = "https://cognizantonline.sharepoint.com/sites/Be.Cognizant/SitePages/Home.aspx";

@@ -1,7 +1,8 @@
 package userDefinedLibraries;
 
 import java.io.File;
-import java.text.DateFormat;
+import java.io.IOException;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -11,35 +12,20 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 public class ScreenShot {
-	public static String filepath = ".\\Screenshots\\";
+	static WebDriver driver;
+	static int i = 1;
 
-	public static String screenShotTC(WebDriver scdriver, String screenShotName) {
-		TakesScreenshot ts = (TakesScreenshot) scdriver;
-		File source = ts.getScreenshotAs(OutputType.FILE);
-		DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy hh-mm-ss");
-		Date date = new Date();
-		String dateValue = dateFormat.format(date);
-		String strdestination = System.getProperty("user.dir") + "/Screenshots/" + screenShotName + "_" + dateValue
-				+ ".png";
-		File destination = new File(strdestination);
-		try { // now copy the screenshot to desired location using copyFile method
-			FileUtils.copyFile(source, destination);
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
+	public static String TakeScreenShot(WebDriver driver, String name) {
+		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+		File file = takesScreenshot.getScreenshotAs(OutputType.FILE);
+		String path = System.getProperty("user.dir") + "\\screenShots\\" + name + " " + timeStamp + ".png";
+		File targetLocation = new File(path);
+		try {
+			FileUtils.copyFile(file, targetLocation);
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
-		return strdestination;
+		return path;
 	}
 }
-
-
-/*
-to take screenshot
-
-try {
-		// Take screen shot
-		ScreenShot.screenShotTC(driver, "Ads and notifications");
-	} catch (Exception e) {
-		e.printStackTrace();
-}
-
-*/
