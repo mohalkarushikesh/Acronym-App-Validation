@@ -1,16 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="userDefinedLibraries.ExtentReport"/>
+  </listeners>
   <test thread-count="5" name="Test search in Chrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testScenario.acronym">
+      <class name="testScenario.TestCases">
         <methods>
-          <include name="getStockPriceUSD"/>
-          <include name="closeBrow"/>
           <include name="driverconfig"/>
+          <include name="compareStockPrice"/>
+          <include name="getStockPriceUSD"/>
+          <include name="getEmailId"/>
+          <include name="clickOnAccInfo"/>
+          <include name="ValidateCogniHomePage"/>
+          <include name="acronymTooltip"/>
+          <include name="getName"/>
+          <include name="closeBrow"/>
+          <include name="rowCount"/>
+          <include name="scrollToBottom"/>
+          <include name="ClickOnCompany"/>
+          <include name="ClickOnBeCogni"/>
+          <include name="acronymDataPrint"/>
+          <include name="isAcronymDisp"/>
+          <include name="clickOnAcronym"/>
         </methods>
-      </class> <!-- testScenario.acronym -->
+      </class> <!-- testScenario.TestCases -->
     </classes>
   </test> <!-- Test search in Chrome(failed) -->
+  <test thread-count="5" name="Test search in Edge(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="testScenario.TestCases">
+        <methods>
+          <include name="driverconfig"/>
+          <include name="compareStockPrice"/>
+          <include name="getStockPriceUSD"/>
+          <include name="getEmailId"/>
+          <include name="clickOnAccInfo"/>
+          <include name="closeBrow"/>
+          <include name="rowCount"/>
+          <include name="acronymTooltip"/>
+          <include name="getName"/>
+          <include name="ValidateCogniHomePage"/>
+          <include name="scrollToBottom"/>
+          <include name="ClickOnCompany"/>
+          <include name="ClickOnBeCogni"/>
+          <include name="acronymDataPrint"/>
+          <include name="isAcronymDisp"/>
+          <include name="clickOnAcronym"/>
+        </methods>
+      </class> <!-- testScenario.TestCases -->
+    </classes>
+  </test> <!-- Test search in Edge(failed) -->
 </suite> <!-- Failed suite [Suite] -->

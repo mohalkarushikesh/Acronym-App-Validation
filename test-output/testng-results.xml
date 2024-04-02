@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="26" passed="26" failed="0" skipped="0">
+<testng-results ignored="0" total="28" passed="28" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-01T19:40:13 IST" name="Suite" finished-at="2024-04-01T19:42:52 IST" duration-ms="158723">
+  <suite started-at="2024-04-02T12:26:50 IST" name="Suite" finished-at="2024-04-02T12:31:17 IST" duration-ms="266981">
     <groups>
     </groups>
-    <test started-at="2024-04-01T19:40:13 IST" name="Test search in Chrome" finished-at="2024-04-01T19:41:35 IST" duration-ms="81610">
-      <class name="testScenario.acronym">
-        <test-method is-config="true" signature="driverconfig(java.lang.String)[pri:0, instance:testScenario.acronym@606e4010]" started-at="2024-04-01T19:40:13 IST" name="driverconfig" finished-at="2024-04-01T19:40:20 IST" duration-ms="7042" status="PASS">
+    <test started-at="2024-04-02T12:26:50 IST" name="Test search in Chrome" finished-at="2024-04-02T12:29:03 IST" duration-ms="133247">
+      <class name="testScenario.TestCases">
+        <test-method is-config="true" signature="driverconfig(java.lang.String)[pri:0, instance:testScenario.TestCases@6950ed69]" started-at="2024-04-02T12:26:50 IST" name="driverconfig" finished-at="2024-04-02T12:26:58 IST" duration-ms="7457" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,67 +18,71 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverconfig -->
-        <test-method signature="clickOnAccInfo()[pri:0, instance:testScenario.acronym@606e4010]" started-at="2024-04-01T19:40:20 IST" name="clickOnAccInfo" finished-at="2024-04-01T19:40:31 IST" duration-ms="10146" status="PASS">
+        <test-method signature="clickOnAccInfo()[pri:0, instance:testScenario.TestCases@6950ed69]" started-at="2024-04-02T12:26:58 IST" name="clickOnAccInfo" finished-at="2024-04-02T12:27:13 IST" duration-ms="15224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnAccInfo -->
-        <test-method signature="getName()[pri:1, instance:testScenario.acronym@606e4010]" started-at="2024-04-01T19:40:31 IST" name="getName" finished-at="2024-04-01T19:40:33 IST" duration-ms="2052" status="PASS">
+        <test-method signature="getName()[pri:1, instance:testScenario.TestCases@6950ed69]" started-at="2024-04-02T12:27:13 IST" name="getName" finished-at="2024-04-02T12:27:14 IST" duration-ms="1042" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getName -->
-        <test-method signature="getEmailId()[pri:2, instance:testScenario.acronym@606e4010]" started-at="2024-04-01T19:40:33 IST" name="getEmailId" finished-at="2024-04-01T19:40:35 IST" duration-ms="2065" status="PASS">
+        <test-method signature="getEmailId()[pri:2, instance:testScenario.TestCases@6950ed69]" started-at="2024-04-02T12:27:14 IST" name="getEmailId" finished-at="2024-04-02T12:27:15 IST" duration-ms="1033" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getEmailId -->
-        <test-method signature="ClickOnCompany()[pri:3, instance:testScenario.acronym@606e4010]" started-at="2024-04-01T19:40:35 IST" name="ClickOnCompany" finished-at="2024-04-01T19:40:37 IST" duration-ms="2136" status="PASS">
+        <test-method signature="ClickOnCompany()[pri:3, instance:testScenario.TestCases@6950ed69]" started-at="2024-04-02T12:27:16 IST" name="ClickOnCompany" finished-at="2024-04-02T12:27:17 IST" duration-ms="1093" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickOnCompany -->
-        <test-method signature="clickOnAcronym()[pri:4, instance:testScenario.acronym@606e4010]" started-at="2024-04-01T19:40:37 IST" name="clickOnAcronym" finished-at="2024-04-01T19:40:39 IST" duration-ms="2119" status="PASS">
+        <test-method signature="clickOnAcronym()[pri:4, instance:testScenario.TestCases@6950ed69]" started-at="2024-04-02T12:27:17 IST" name="clickOnAcronym" finished-at="2024-04-02T12:27:18 IST" duration-ms="1121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnAcronym -->
-        <test-method signature="acronymTooltip()[pri:5, instance:testScenario.acronym@606e4010]" started-at="2024-04-01T19:40:39 IST" name="acronymTooltip" finished-at="2024-04-01T19:40:41 IST" duration-ms="2044" status="PASS">
+        <test-method signature="acronymTooltip()[pri:5, instance:testScenario.TestCases@6950ed69]" started-at="2024-04-02T12:27:20 IST" name="acronymTooltip" finished-at="2024-04-02T12:27:21 IST" duration-ms="1044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acronymTooltip -->
-        <test-method signature="isAcronymDisp()[pri:6, instance:testScenario.acronym@606e4010]" started-at="2024-04-01T19:40:41 IST" name="isAcronymDisp" finished-at="2024-04-01T19:40:41 IST" duration-ms="20" status="PASS">
+        <test-method signature="isAcronymDisp()[pri:6, instance:testScenario.TestCases@6950ed69]" started-at="2024-04-02T12:27:21 IST" name="isAcronymDisp" finished-at="2024-04-02T12:27:21 IST" duration-ms="35" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isAcronymDisp -->
-        <test-method signature="rowCount()[pri:7, instance:testScenario.acronym@606e4010]" started-at="2024-04-01T19:40:41 IST" name="rowCount" finished-at="2024-04-01T19:40:41 IST" duration-ms="32" status="PASS">
+        <test-method signature="rowCount()[pri:7, instance:testScenario.TestCases@6950ed69]" started-at="2024-04-02T12:27:22 IST" name="rowCount" finished-at="2024-04-02T12:27:22 IST" duration-ms="35" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- rowCount -->
-        <test-method signature="acronymDataPrint()[pri:9, instance:testScenario.acronym@606e4010]" started-at="2024-04-01T19:40:41 IST" name="acronymDataPrint" finished-at="2024-04-01T19:41:15 IST" duration-ms="34244" status="PASS">
+        <test-method signature="acronymDataPrint()[pri:9, instance:testScenario.TestCases@6950ed69]" started-at="2024-04-02T12:27:22 IST" name="acronymDataPrint" finished-at="2024-04-02T12:27:58 IST" duration-ms="36106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acronymDataPrint -->
-        <test-method signature="ClickOnBeCogni()[pri:10, instance:testScenario.acronym@606e4010]" started-at="2024-04-01T19:41:15 IST" name="ClickOnBeCogni" finished-at="2024-04-01T19:41:17 IST" duration-ms="2184" status="PASS">
+        <test-method signature="ClickOnBeCogni()[pri:10, instance:testScenario.TestCases@6950ed69]" started-at="2024-04-02T12:27:58 IST" name="ClickOnBeCogni" finished-at="2024-04-02T12:28:00 IST" duration-ms="2132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickOnBeCogni -->
-        <test-method signature="ValidateCogniHomePage()[pri:11, instance:testScenario.acronym@606e4010]" started-at="2024-04-01T19:41:17 IST" name="ValidateCogniHomePage" finished-at="2024-04-01T19:41:18 IST" duration-ms="157" status="PASS">
+        <test-method signature="ValidateCogniHomePage()[pri:11, instance:testScenario.TestCases@6950ed69]" started-at="2024-04-02T12:28:01 IST" name="ValidateCogniHomePage" finished-at="2024-04-02T12:28:01 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateCogniHomePage -->
-        <test-method signature="scrollToBottom()[pri:12, instance:testScenario.acronym@606e4010]" started-at="2024-04-01T19:41:18 IST" name="scrollToBottom" finished-at="2024-04-01T19:41:20 IST" duration-ms="2037" status="PASS">
+        <test-method signature="scrollToBottom()[pri:12, instance:testScenario.TestCases@6950ed69]" started-at="2024-04-02T12:28:01 IST" name="scrollToBottom" finished-at="2024-04-02T12:28:03 IST" duration-ms="2047" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scrollToBottom -->
-        <test-method signature="getStockPriceUSD()[pri:13, instance:testScenario.acronym@606e4010]" started-at="2024-04-01T19:41:20 IST" name="getStockPriceUSD" finished-at="2024-04-01T19:41:22 IST" duration-ms="2057" status="PASS">
+        <test-method signature="getStockPriceUSD()[pri:13, instance:testScenario.TestCases@6950ed69]" started-at="2024-04-02T12:28:03 IST" name="getStockPriceUSD" finished-at="2024-04-02T12:28:06 IST" duration-ms="2307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getStockPriceUSD -->
-        <test-method is-config="true" signature="closeBrow()[pri:0, instance:testScenario.acronym@606e4010]" started-at="2024-04-01T19:41:22 IST" name="closeBrow" finished-at="2024-04-01T19:41:35 IST" duration-ms="13174" status="PASS">
+        <test-method signature="compareStockPrice()[pri:14, instance:testScenario.TestCases@6950ed69]" started-at="2024-04-02T12:28:06 IST" name="compareStockPrice" finished-at="2024-04-02T12:28:50 IST" duration-ms="44207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareStockPrice -->
+        <test-method is-config="true" signature="closeBrow()[pri:0, instance:testScenario.TestCases@6950ed69]" started-at="2024-04-02T12:28:50 IST" name="closeBrow" finished-at="2024-04-02T12:29:03 IST" duration-ms="13129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrow -->
-      </class> <!-- testScenario.acronym -->
+      </class> <!-- testScenario.TestCases -->
     </test> <!-- Test search in Chrome -->
-    <test started-at="2024-04-01T19:41:35 IST" name="Test search in Edge" finished-at="2024-04-01T19:42:52 IST" duration-ms="77078">
-      <class name="testScenario.acronym">
-        <test-method is-config="true" signature="driverconfig(java.lang.String)[pri:0, instance:testScenario.acronym@61c4eee0]" started-at="2024-04-01T19:41:35 IST" name="driverconfig" finished-at="2024-04-01T19:41:41 IST" duration-ms="6126" status="PASS">
+    <test started-at="2024-04-02T12:29:03 IST" name="Test search in Edge" finished-at="2024-04-02T12:31:17 IST" duration-ms="133397">
+      <class name="testScenario.TestCases">
+        <test-method is-config="true" signature="driverconfig(java.lang.String)[pri:0, instance:testScenario.TestCases@479cbee5]" started-at="2024-04-02T12:29:03 IST" name="driverconfig" finished-at="2024-04-02T12:29:11 IST" duration-ms="7788" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,63 +93,67 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverconfig -->
-        <test-method signature="clickOnAccInfo()[pri:0, instance:testScenario.acronym@61c4eee0]" started-at="2024-04-01T19:41:41 IST" name="clickOnAccInfo" finished-at="2024-04-01T19:41:51 IST" duration-ms="10127" status="PASS">
+        <test-method signature="clickOnAccInfo()[pri:0, instance:testScenario.TestCases@479cbee5]" started-at="2024-04-02T12:29:11 IST" name="clickOnAccInfo" finished-at="2024-04-02T12:29:22 IST" duration-ms="11028" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnAccInfo -->
-        <test-method signature="getName()[pri:1, instance:testScenario.acronym@61c4eee0]" started-at="2024-04-01T19:41:51 IST" name="getName" finished-at="2024-04-01T19:41:53 IST" duration-ms="2032" status="PASS">
+        <test-method signature="getName()[pri:1, instance:testScenario.TestCases@479cbee5]" started-at="2024-04-02T12:29:23 IST" name="getName" finished-at="2024-04-02T12:29:24 IST" duration-ms="1039" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getName -->
-        <test-method signature="getEmailId()[pri:2, instance:testScenario.acronym@61c4eee0]" started-at="2024-04-01T19:41:53 IST" name="getEmailId" finished-at="2024-04-01T19:41:55 IST" duration-ms="2065" status="PASS">
+        <test-method signature="getEmailId()[pri:2, instance:testScenario.TestCases@479cbee5]" started-at="2024-04-02T12:29:24 IST" name="getEmailId" finished-at="2024-04-02T12:29:25 IST" duration-ms="1040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getEmailId -->
-        <test-method signature="ClickOnCompany()[pri:3, instance:testScenario.acronym@61c4eee0]" started-at="2024-04-01T19:41:55 IST" name="ClickOnCompany" finished-at="2024-04-01T19:41:57 IST" duration-ms="2089" status="PASS">
+        <test-method signature="ClickOnCompany()[pri:3, instance:testScenario.TestCases@479cbee5]" started-at="2024-04-02T12:29:25 IST" name="ClickOnCompany" finished-at="2024-04-02T12:29:26 IST" duration-ms="1162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickOnCompany -->
-        <test-method signature="clickOnAcronym()[pri:4, instance:testScenario.acronym@61c4eee0]" started-at="2024-04-01T19:41:57 IST" name="clickOnAcronym" finished-at="2024-04-01T19:42:00 IST" duration-ms="2130" status="PASS">
+        <test-method signature="clickOnAcronym()[pri:4, instance:testScenario.TestCases@479cbee5]" started-at="2024-04-02T12:29:27 IST" name="clickOnAcronym" finished-at="2024-04-02T12:29:28 IST" duration-ms="1125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnAcronym -->
-        <test-method signature="acronymTooltip()[pri:5, instance:testScenario.acronym@61c4eee0]" started-at="2024-04-01T19:42:00 IST" name="acronymTooltip" finished-at="2024-04-01T19:42:02 IST" duration-ms="2037" status="PASS">
+        <test-method signature="acronymTooltip()[pri:5, instance:testScenario.TestCases@479cbee5]" started-at="2024-04-02T12:29:30 IST" name="acronymTooltip" finished-at="2024-04-02T12:29:31 IST" duration-ms="1051" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acronymTooltip -->
-        <test-method signature="isAcronymDisp()[pri:6, instance:testScenario.acronym@61c4eee0]" started-at="2024-04-01T19:42:02 IST" name="isAcronymDisp" finished-at="2024-04-01T19:42:02 IST" duration-ms="25" status="PASS">
+        <test-method signature="isAcronymDisp()[pri:6, instance:testScenario.TestCases@479cbee5]" started-at="2024-04-02T12:29:31 IST" name="isAcronymDisp" finished-at="2024-04-02T12:29:31 IST" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isAcronymDisp -->
-        <test-method signature="rowCount()[pri:7, instance:testScenario.acronym@61c4eee0]" started-at="2024-04-01T19:42:02 IST" name="rowCount" finished-at="2024-04-01T19:42:02 IST" duration-ms="29" status="PASS">
+        <test-method signature="rowCount()[pri:7, instance:testScenario.TestCases@479cbee5]" started-at="2024-04-02T12:29:31 IST" name="rowCount" finished-at="2024-04-02T12:29:31 IST" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- rowCount -->
-        <test-method signature="acronymDataPrint()[pri:9, instance:testScenario.acronym@61c4eee0]" started-at="2024-04-01T19:42:02 IST" name="acronymDataPrint" finished-at="2024-04-01T19:42:32 IST" duration-ms="30644" status="PASS">
+        <test-method signature="acronymDataPrint()[pri:9, instance:testScenario.TestCases@479cbee5]" started-at="2024-04-02T12:29:32 IST" name="acronymDataPrint" finished-at="2024-04-02T12:30:12 IST" duration-ms="40069" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acronymDataPrint -->
-        <test-method signature="ClickOnBeCogni()[pri:10, instance:testScenario.acronym@61c4eee0]" started-at="2024-04-01T19:42:32 IST" name="ClickOnBeCogni" finished-at="2024-04-01T19:42:34 IST" duration-ms="2108" status="PASS">
+        <test-method signature="ClickOnBeCogni()[pri:10, instance:testScenario.TestCases@479cbee5]" started-at="2024-04-02T12:30:12 IST" name="ClickOnBeCogni" finished-at="2024-04-02T12:30:14 IST" duration-ms="2100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickOnBeCogni -->
-        <test-method signature="ValidateCogniHomePage()[pri:11, instance:testScenario.acronym@61c4eee0]" started-at="2024-04-01T19:42:34 IST" name="ValidateCogniHomePage" finished-at="2024-04-01T19:42:35 IST" duration-ms="186" status="PASS">
+        <test-method signature="ValidateCogniHomePage()[pri:11, instance:testScenario.TestCases@479cbee5]" started-at="2024-04-02T12:30:15 IST" name="ValidateCogniHomePage" finished-at="2024-04-02T12:30:15 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateCogniHomePage -->
-        <test-method signature="scrollToBottom()[pri:12, instance:testScenario.acronym@61c4eee0]" started-at="2024-04-01T19:42:35 IST" name="scrollToBottom" finished-at="2024-04-01T19:42:37 IST" duration-ms="2048" status="PASS">
+        <test-method signature="scrollToBottom()[pri:12, instance:testScenario.TestCases@479cbee5]" started-at="2024-04-02T12:30:16 IST" name="scrollToBottom" finished-at="2024-04-02T12:30:18 IST" duration-ms="2022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scrollToBottom -->
-        <test-method signature="getStockPriceUSD()[pri:13, instance:testScenario.acronym@61c4eee0]" started-at="2024-04-01T19:42:37 IST" name="getStockPriceUSD" finished-at="2024-04-01T19:42:39 IST" duration-ms="2068" status="PASS">
+        <test-method signature="getStockPriceUSD()[pri:13, instance:testScenario.TestCases@479cbee5]" started-at="2024-04-02T12:30:18 IST" name="getStockPriceUSD" finished-at="2024-04-02T12:30:20 IST" duration-ms="2208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getStockPriceUSD -->
-        <test-method is-config="true" signature="closeBrow()[pri:0, instance:testScenario.acronym@61c4eee0]" started-at="2024-04-01T19:42:39 IST" name="closeBrow" finished-at="2024-04-01T19:42:52 IST" duration-ms="13302" status="PASS">
+        <test-method signature="compareStockPrice()[pri:14, instance:testScenario.TestCases@479cbee5]" started-at="2024-04-02T12:30:20 IST" name="compareStockPrice" finished-at="2024-04-02T12:31:03 IST" duration-ms="43238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareStockPrice -->
+        <test-method is-config="true" signature="closeBrow()[pri:0, instance:testScenario.TestCases@479cbee5]" started-at="2024-04-02T12:31:04 IST" name="closeBrow" finished-at="2024-04-02T12:31:17 IST" duration-ms="13202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrow -->
-      </class> <!-- testScenario.acronym -->
+      </class> <!-- testScenario.TestCases -->
     </test> <!-- Test search in Edge -->
   </suite> <!-- Suite -->
 </testng-results>

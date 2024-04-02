@@ -34,6 +34,19 @@
 			<artifactId>slf4j-api</artifactId>
 			<version>2.1.0-alpha1</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.github.hxbkx/ExcelUtils -->
+		<dependency>
+			<groupId>com.github.hxbkx</groupId>
+			<artifactId>ExcelUtils</artifactId>
+			<version>1.4.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.github.andyczy/java-excel-utils -->
+		<dependency>
+			<groupId>com.github.andyczy</groupId>
+			<artifactId>java-excel-utils</artifactId>
+			<version>2.0</version>
+		</dependency>
+
 
 	</dependencies>
 </project>
