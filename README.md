@@ -42,7 +42,7 @@ Cross Browser Testing
 Browser opened with the provided url
 Report object Initialised
 User Name : Mohalkar, Rushikesh (Contractor)
-Email Id : 2327238@cognizant.com
+Email Id : youremail@gmail.com
 Tooltip: Acronyms
 Acronyms
 244
@@ -297,7 +297,7 @@ Closed the browser
 Browser opened with the provided url
 Report object Initialised
 User Name : Mohalkar, Rushikesh (Contractor)
-Email Id : 2327238@cognizant.com
+Email Id : youremail@gmail.com
 Tooltip: Acronyms
 Acronyms
 244
