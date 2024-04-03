@@ -24,10 +24,12 @@ public class ExtentReport extends DriverSetup implements ITestListener {
 	public void onStart(ITestContext testContext) {
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
 		repName = "Test-Report-" + timeStamp + ".html";
+		
 		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report
 		sparkReporter.config().setDocumentTitle("Acronym Extent Report"); // Title of report
 		sparkReporter.config().setReportName("Acronym Report"); // name of the report
 		sparkReporter.config().setTheme(Theme.DARK);
+		
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
 		extent.setSystemInfo("Application", "Acronym App");
@@ -40,6 +42,7 @@ public class ExtentReport extends DriverSetup implements ITestListener {
 		String browser = testContext.getCurrentXmlTest().getParameter("browser");
 		extent.setSystemInfo("Browser", browser);
 		extent.setSystemInfo("Tester Name","Rushikesh Mohalkar");
+		
 		List<String> includedGroups = testContext.getCurrentXmlTest().getIncludedGroups();
 		if (!includedGroups.isEmpty()) {
 			extent.setSystemInfo("Groups", includedGroups.toString());
@@ -52,6 +55,7 @@ public class ExtentReport extends DriverSetup implements ITestListener {
 		test.log(Status.PASS, result.getName() + " got successfully executed");
 		String imgPath = ScreenShot.TakeScreenShot(driver, result.getName());
 		test.addScreenCaptureFromPath(imgPath);
+		
 	}
 
 	public void onTestFailure(ITestResult result) {
@@ -68,16 +72,18 @@ public class ExtentReport extends DriverSetup implements ITestListener {
 		test.assignCategory(result.getMethod().getGroups());
 		test.log(Status.SKIP, result.getName() + " got skipped");
 		test.log(Status.INFO, result.getThrowable().getMessage());
+		String imgPath = ScreenShot.TakeScreenShot(driver, result.getName());
+		test.addScreenCaptureFromPath(imgPath);
 	}
 
 	public void onFinish(ITestContext testContext) {
 		extent.flush();
 		String pathOfExtentReport = System.getProperty("user.dir") + "\\reports\\" + repName;
-		File extentReport = new File(pathOfExtentReport);
-		try {
-			Desktop.getDesktop().browse(extentReport.toURI());
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//		File extentReport = new File(pathOfExtentReport);
+//		try {
+//			Desktop.getDesktop().browse(extentReport.toURI());
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 	}
 }

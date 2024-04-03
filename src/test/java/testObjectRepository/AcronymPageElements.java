@@ -1,12 +1,20 @@
 package testObjectRepository;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.List;
 
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import userDefinedLibraries.ScreenShot;
 
 public class AcronymPageElements {
 	public WebDriver driver;
@@ -42,15 +50,25 @@ public class AcronymPageElements {
 		return r;
 	}
 	// printing acronym data
-	public void acronymDataPrint() {
+	public void acronymDataPrint() throws IOException {
+		FileOutputStream fos = new FileOutputStream(System.getProperty("user.dir")+"\\testdata\\AcronymAppOutput.xlsx");
+		XSSFWorkbook wb=new XSSFWorkbook();
+		XSSFSheet sheet=wb.createSheet();
 		for (int r = 1; r <= rowCount.size(); r++) {
+			XSSFRow row=sheet.createRow(r-1);
 			for (int c = 1; c <= colCount.size(); c++) {
 				String listtxt = driver.findElement(By.xpath("//tbody//tr[" + r + "]//td[" + c + "]")).getText();
 				System.out.print(listtxt + "   ");
+				row.createCell(c-1).setCellValue(listtxt);
 			}
 			System.out.println();
 		}
+		ScreenShot.TakeScreenShot(driver, "acronymData");
+		wb.write(fos);
+		wb.close();
+		fos.close();
 	}
+	
 	// click on beCognizant URL
 	public void clickOnBeCogni() {
 		becogni.click();

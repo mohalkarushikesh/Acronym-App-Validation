@@ -16,14 +16,13 @@ import userDefinedLibraries.ExcelUtils;
 
 public class BeCognizantPageElements {
 	public WebDriver driver;
+
 	public BeCognizantPageElements(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
 	// X-Paths
-	//@FindBy(x path = "// div[@class='_8ZYZKvxC8bvw1xgQGSkvvA==']")
-	//public static WebElement accInfo;
 	@FindBy(id = "O365_MainLink_MePhoto")
 	public static WebElement accInfo;
 	@FindBy(id = "mectrl_currentAccount_primary")
@@ -56,10 +55,12 @@ public class BeCognizantPageElements {
 	public String getEmailId() {
 		return emailId.getText();
 	}
+
 	// click on company drop-down
 	public void clickOnCompany() {
 		company.click();
 	}
+
 	// select acronym from drop down
 	public void clickOnAcronym() {
 		String acronym = "Acronyms";

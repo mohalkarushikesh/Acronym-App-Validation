@@ -1,5 +1,7 @@
 package testScenario;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
@@ -123,7 +125,7 @@ public class TestCases extends DriverSetup {
 	public void isAcronymDisp() {
 		test = extent.createTest("Acronym is displayed");
 		test.log(Status.INFO, "Starting the test case");
-		System.out.println(acronymElement.elementDisplayed.getText());
+		System.out.println("Yes, Acronym is displayed : " + acronymElement.elementDisplayed.getText());
 		test.pass("Acronym is disaplayed");
 	}
 
@@ -145,7 +147,12 @@ public class TestCases extends DriverSetup {
 	public void acronymDataPrint() {
 		test = extent.createTest("display the acronym data");
 		test.log(Status.INFO, "Starting the test case");
-		acronymElement.acronymDataPrint();
+		try {
+			acronymElement.acronymDataPrint();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		// to display data
 		try {
 			Thread.sleep(8000);
