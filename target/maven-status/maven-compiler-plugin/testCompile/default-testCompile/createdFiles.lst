@@ -1,0 +1,7 @@
+testObjectRepository\BeCognizantPageElements.class
+userDefinedLibraries\DriverSetup.class
+userDefinedLibraries\ScreenShot.class
+testObjectRepository\AcronymPageElements.class
+testScenario\TestCases.class
+userDefinedLibraries\ExcelUtils.class
+userDefinedLibraries\ExtentReport.class

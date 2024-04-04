@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -29,7 +30,7 @@ public class TestCases extends DriverSetup {
 
 	@Parameters({ "browser" })
 	@BeforeClass
-	public void driverconfig(String browser) {
+	public void driverconfig(@Optional("defaultBrowser")String browser) {
 		// Instantiate driver
 		driver = DriverSetup.driverInstantiate(browser);
 		System.out.println("Browser opened with the provided url");
@@ -64,7 +65,7 @@ public class TestCases extends DriverSetup {
 
 		String name = beCogniElement.getName();
 		System.out.println("User Name : " + name);
-		test.pass("Name is taken");
+		test.pass("Name is taken and printed");
 	}
 
 	@Test(priority = 2)
@@ -78,7 +79,7 @@ public class TestCases extends DriverSetup {
 		}
 		String emailId = beCogniElement.getEmailId();
 		System.out.println("Email Id : " + emailId);
-		test.pass("Email Id is taken");
+		test.pass("Email Id is taken and printed");
 	}
 
 	@Test(priority = 3)
@@ -134,7 +135,7 @@ public class TestCases extends DriverSetup {
 		test = extent.createTest("check for rowcount");
 		test.log(Status.INFO, "Starting the test case");
 		System.out.println(acronymElement.displayrowCount());
-		test.pass("row count is calculated");
+		test.pass("Row count is calculated");
 	}
 
 	/*
@@ -159,7 +160,7 @@ public class TestCases extends DriverSetup {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		test.pass("acronym data is displayed");
+		test.pass("Acronym data is displayed");
 
 	}
 
@@ -174,7 +175,7 @@ public class TestCases extends DriverSetup {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		test.pass("acronym data is displayed");
+		test.pass("Acronym data is displayed");
 
 	}
 
@@ -183,7 +184,7 @@ public class TestCases extends DriverSetup {
 		test = extent.createTest("display the acronym data");
 		test.log(Status.INFO, "Starting the test case");
 		beCogniElement.ValidateCogniHomePage();
-		test.pass("acronym data is displayed");
+		test.pass("Acronym data is displayed");
 	}
 
 	@Test(priority = 12)
@@ -197,7 +198,7 @@ public class TestCases extends DriverSetup {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		test.pass("scrolled to bottom of the page");
+		test.pass("Scrolled to bottom of the page");
 	}
 
 	@Test(priority = 13)
@@ -211,7 +212,7 @@ public class TestCases extends DriverSetup {
 		}
 		System.out.println("Current stock price : " + beCogniElement.getStockValue() + " " + beCogniElement.getStockUSD());
 
-		test.pass("stock value is disaplayed");
+		test.pass("Stock value is disaplayed");
 	}
 
 	@Test(priority = 14)
@@ -219,7 +220,7 @@ public class TestCases extends DriverSetup {
 		test = extent.createTest("validate stock price");
 		test.log(Status.INFO, "starting the test case");
 		beCogniElement.validatStockPrice();
-		test.pass("stock value is validated!");
+		test.pass("Stock value is validated!");
 	}
 
 	@AfterClass

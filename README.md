@@ -1,5 +1,7 @@
 # Acronym App Validation
 
+## Description
+
 This project is a test automation suite for the Acronym App. It validates the Cognizant stock price on the Be. Cognizant page with Google Data and verifies if the same stock price is present in any other years or months.
 
 ### Prerequisites
@@ -12,39 +14,47 @@ This project is a test automation suite for the Acronym App. It validates the Co
 
 ### Problem Statement: Acronym and Cognizant Stock Price
 
-Get all the Data from Acronym App and verify the Cognizant Stock Prize in Be. Cognizant page with Google Data.\
-Get all data of Acronyms present in Acronym App.\
-Validate cognizant stock price present in Be. Cognizant page with the Google Data.\
-Verify the same Stock Prize is present in any other years.\
-(Suggested Site: https://be.cognizant.com)
+- Get all the Data from Acronym App and verify the Cognizant Stock Prize in Be. Cognizant page with Google Data.
+- Get all data of Acronyms present in Acronym App.
+- Validate cognizant stock price present in Be. Cognizant page with the Google Data.
+- Verify the same Stock Prize is present in any other years.
+- (Suggested Site: https://be.cognizant.com)
 
 ### Detailed Description: Main Project
-- Navigate to Be. Cognizant Website and capture the user information.\
-- Under Company Header Click on Acronyms.\
-- Verify Acronyms is displayed and Get Tool Tip.\
-- Print the count of Acronyms data.\
-- Get all data of Acronyms present in Acronym App.\
-- Click on be.Cognizant and Verify it got redirected to Be. Cognizant Home Page.\
-- Validate cognizant stock price present in Be. Cognizant page with the Google Data.\
-- Verify the same Stock Prize is present in any other years or Month.\
+- Navigate to Be. Cognizant Website and capture the user information.
+- Under Company Header Click on Acronyms.
+- Verify Acronyms is displayed and Get Tool Tip.
+- Print the count of Acronyms data.
+- Get all data of Acronyms present in Acronym App.
+- Click on be.Cognizant and Verify it got redirected to Be. Cognizant Home Page.
+- Validate cognizant stock price present in Be. Cognizant page with the Google Data.
+- Verify the same Stock Prize is present in any other years or Month.
 - Note: Take all necessary screenshots for all the testcases and print all the data in the console.
 
 ### Key Automation Scope
-Handling alert, different browser windows, search option\
-Navigating back to home page\
-Extract multiple options items & store in collections.\
-Capture warning message\
-Data Driven approach.\
-Cross Browser Testing
+- Handling alert, different browser windows, search option
+- Navigating back to home page
+- Extract multiple options items & store in collections
+- Capture warning message
+- Data Driven approach
+- Cross Browser Testing
+
+### Installation
+1. Clone the repository: `https://github.com/mohalkarushikesh/Acronym-App-Validation.git`
+2. Navigate to the project directory: `cd Acronym-App-Validation`
+3. Install the dependencies: `mvn install` 
+
+## Usage
+To run the tests, use the following command: `mvn test`
 
 ### Output: [Chrome and Edge]
 
 Browser opened with the provided url
 Report object Initialised
 User Name : Mohalkar, Rushikesh (Contractor)
-Email Id : youremail@gmail.com
+Email Id : 2327238@cognizant.com
 Tooltip: Acronyms
-Acronyms
+Yes, Acronym is displayed : Acronyms
 244
 Acronym   Stands for...   
 AAD   Azure Active Directory   
@@ -291,15 +301,15 @@ YER   Year-end Review
 Y/Y or YoY   Year-over-Year   
 ZDLC   Zero Deviation Lifecycle   
 URL matching --> Part executed
-Current stock price : 71.75 USD
-No data found!
+Current stock price : 71.84 USD
+Monday, May 31, 2021
 Closed the browser
 Browser opened with the provided url
 Report object Initialised
 User Name : Mohalkar, Rushikesh (Contractor)
-Email Id : youremail@gmail.com
+Email Id : 2327238@cognizant.com
 Tooltip: Acronyms
-Acronyms
+Yes, Acronym is displayed : Acronyms
 244
 Acronym   Stands for...   
 AAD   Azure Active Directory   
@@ -546,14 +556,16 @@ YER   Year-end Review
 Y/Y or YoY   Year-over-Year   
 ZDLC   Zero Deviation Lifecycle   
 URL matching --> Part executed
-Current stock price : 71.75 USD
-No data found!
+Current stock price : 71.84 USD
+Monday, May 31, 2021
 Closed the browser
 
 ===============================================
 Suite
 Total tests run: 28, Passes: 28, Failures: 0, Skips: 0
 ===============================================
+
+
 
 
 

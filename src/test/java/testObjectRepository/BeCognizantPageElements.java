@@ -105,18 +105,18 @@ public class BeCognizantPageElements {
 			e.printStackTrace();
 		}
 		int flag = 0;
-		for (int i = 1; i < rows; i++) {
+		for (int r = 1; r < rows; r++) {
 			String stock = stockValue.getText();
 			String stockdata = null;
 			try {
-				stockdata = ExcelUtils.getCellData(file, "Sheet1", i, 1);
+				stockdata = ExcelUtils.getCellData(file, "Sheet1", r, 1);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 			if (Double.parseDouble(stockdata) == Double.parseDouble(stock)) {
 				String date = null;
 				try {
-					date = ExcelUtils.getCellData(file, "Sheet1", i, 0);
+					date = ExcelUtils.getCellData(file, "Sheet1", r, 0);
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
