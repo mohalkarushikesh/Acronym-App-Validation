@@ -52,7 +52,7 @@ To run the tests, use the following command: `mvn test`
 Browser opened with the provided url
 Report object Initialised
 User Name : Mohalkar, Rushikesh (Contractor)
-Email Id : 2327238@cognizant.com
+Email Id : youremail@cognizant.com
 Tooltip: Acronyms
 Yes, Acronym is displayed : Acronyms
 244
@@ -307,7 +307,7 @@ Closed the browser
 Browser opened with the provided url
 Report object Initialised
 User Name : Mohalkar, Rushikesh (Contractor)
-Email Id : 2327238@cognizant.com
+Email Id : youremail@cognizant.com
 Tooltip: Acronyms
 Yes, Acronym is displayed : Acronyms
 244
