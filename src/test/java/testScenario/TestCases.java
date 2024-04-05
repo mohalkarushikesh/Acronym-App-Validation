@@ -45,7 +45,7 @@ public class TestCases extends DriverSetup {
 		test = extent.createTest("Click on acc info");
 		test.log(Status.INFO, "Starting the test case");
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(15000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -134,7 +134,7 @@ public class TestCases extends DriverSetup {
 	public void rowCount() {
 		test = extent.createTest("check for rowcount");
 		test.log(Status.INFO, "Starting the test case");
-		System.out.println(acronymElement.displayrowCount());
+		System.out.println("Total Row count is :  "+acronymElement.displayrowCount());
 		test.pass("Row count is calculated");
 	}
 
@@ -151,7 +151,6 @@ public class TestCases extends DriverSetup {
 		try {
 			acronymElement.acronymDataPrint();
 		} catch (IOException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		// to display data
@@ -172,7 +171,6 @@ public class TestCases extends DriverSetup {
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		test.pass("Acronym data is displayed");
@@ -195,7 +193,6 @@ public class TestCases extends DriverSetup {
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		test.pass("Scrolled to bottom of the page");
@@ -226,7 +223,7 @@ public class TestCases extends DriverSetup {
 	@AfterClass
 	public void closeBrow() {
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

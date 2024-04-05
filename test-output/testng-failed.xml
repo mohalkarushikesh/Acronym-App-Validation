@@ -4,19 +4,17 @@
   <listeners>
     <listener class-name="userDefinedLibraries.ExtentReport"/>
   </listeners>
-  <test thread-count="5" name="Test search in Edge(failed)">
-    <parameter name="browser" value="edge"/>
+  <test thread-count="5" name="Test search in Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="testScenario.TestCases">
         <methods>
           <include name="driverconfig"/>
-          <include name="compareStockPrice"/>
-          <include name="getStockPriceUSD"/>
           <include name="getEmailId"/>
-          <include name="getName"/>
           <include name="closeBrow"/>
+          <include name="getName"/>
         </methods>
       </class> <!-- testScenario.TestCases -->
     </classes>
-  </test> <!-- Test search in Edge(failed) -->
+  </test> <!-- Test search in Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -44,7 +44,7 @@ This project is a test automation suite for the Acronym App. It validates the Co
 2. Navigate to the project directory: `cd Acronym-App-Validation`
 3. Install the dependencies: `mvn install` 
 
-## Usage
+### Usage
 To run the tests, use the following command: `mvn test`
 
 ### Output: [Chrome and Edge]
@@ -560,12 +560,64 @@ Current stock price : 71.84 USD
 Monday, May 31, 2021
 Closed the browser
 
-===============================================
+======================================================
 Suite
 Total tests run: 28, Passes: 28, Failures: 0, Skips: 0
-===============================================
+=======================================================
 
+###Dependecies
 
+```
+<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.18.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.9.0</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api 
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>2.1.0-alpha1</version>
+		</dependency>
+		 https://mvnrepository.com/artifact/com.github.hxbkx/ExcelUtils -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>2.0.12</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.github.hxbkx</groupId>
+			<artifactId>ExcelUtils</artifactId>
+			<version>1.4.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.github.andyczy/java-excel-utils -->
+		<dependency>
+			<groupId>com.github.andyczy</groupId>
+			<artifactId>java-excel-utils</artifactId>
+			<version>2.0</version>
+		</dependency>
+	</dependencies>
+```
 
 
 

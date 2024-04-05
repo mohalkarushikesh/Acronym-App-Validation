@@ -59,6 +59,7 @@ public class AcronymPageElements {
 			for (int c = 1; c <= colCount.size(); c++) {
 				String listtxt = driver.findElement(By.xpath("//tbody//tr[" + r + "]//td[" + c + "]")).getText();
 				System.out.print(listtxt + "   ");
+				//put data into sheet
 				row.createCell(c-1).setCellValue(listtxt);
 			}
 			System.out.println();
